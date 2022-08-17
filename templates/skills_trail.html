@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        Form Page
+    </head>
+    <body>
+        <form action="register_page" method="post">
+            {% csrf_token %}
+            Enter Name<input name="name" type="text"><br>
+            Enter Password<input name="password" type="password"><br>
+            Enter Email<input name="user_email" type="email"><br>
+            Enter First Name<input name="first_name" type="text"><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
