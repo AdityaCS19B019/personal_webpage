@@ -48,10 +48,10 @@
                   <a class="nav-link active" href="/view/experience">Experience</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link active" href="#">Certifications</a>
+                  <a class="nav-link active" href="/view/certifications">Certifications</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link active" href="https://www.dropbox.com/s/iwi8cxktid9nfd4/aditya_resume_updated%20%282%29.pdf?dl=0" target="_blank">Resume</a>
+                  <a class="nav-link active" href="https://bit.ly/Resume_Aditya_Immaneni" target="_blank">Resume</a>
                 </li>
               </ul>
               {% if user.is_authenticated %}
@@ -77,7 +77,7 @@
             <p>Each card gives the information of the Project Name , Duration , Abstract , Github/weblink , Skills(Shown in images)</p>
           </div>
           
-          <h2 style="text-align:center">My Skills</h2>
+          <h2 style="text-align:center">My Projects</h2>
           <div class="row">
             {% for d in data %}
               <div class="column">
@@ -87,7 +87,7 @@
                     <h2>{{d.project.project_name}}</h2>
                     <p class="title">{{d.project.project_duration}}</p>
                     <p>{{d.project.project_abstract}}</p>
-                    <a href="{{d.project.project_web_link}}" target="_blank">Project Link</a>
+                    <a href="{{d.project.git_web_link}}" target="_blank">Project Link</a>
                     <!-- <p><button class="button">Contact</button></p> -->
                     <div class = "skills_list">
                       {% for i in d.skills %}  

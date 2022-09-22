@@ -33,3 +33,8 @@ class Experience_skills(models.Model) :
     experience_id = models.ForeignKey(Experience , on_delete=models.CASCADE)
     skill_id = models.ForeignKey(Skills , on_delete=models.CASCADE)
 
+class Certifications(models.Model) :
+    Skill_name = models.ForeignKey(Skills , on_delete=models.CASCADE)
+    certification_link = models.TextField()
+    certified_by = models.CharField(max_length=100)
+

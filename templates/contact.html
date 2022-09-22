@@ -54,10 +54,10 @@
 			  <a class="nav-link active" href="#">Experience</a>
 			</li>
 			<li class="nav-item active">
-			  <a class="nav-link active" href="#">Certifications</a>
+			  <a class="nav-link active" href="/view/certifications">Certifications</a>
 			</li>
 			<li class="nav-item active">
-			  <a class="nav-link active" href="#">Resume</a>
+			  <a class="nav-link active" href="https://bit.ly/Resume_Aditya_Immaneni" target="_blank">Resume</a>
 			</li>
 		  </ul>
 		  {% if user.is_authenticated %}
@@ -83,7 +83,7 @@
 				<img src="{% static 'contact_related/images/img-01.png' %}" alt="IMG">
 			</div>
 
-			<form class="contact1-form validate-form">
+			<form class="contact1-form validate-form" method="post" action="contact/send_msg">
 				<span class="contact1-form-title">
 					Get in touch
 				</span>
