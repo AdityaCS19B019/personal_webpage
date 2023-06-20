@@ -1,8 +1,18 @@
 # Personal Webpage
+
 This is a webpage developed using Django framework, Postgresql to give the information about my skills, 
 projects that I had invloved in, also an auto communication medium to contact me. 
 
-# Steps to use
+# Steps to start the application
+
+1. Clone/Dowload the code
+2. Install the dependencies by looking into settings.py file
+3. Naviagte to root folder which contains manage.py file
+4. Run `python manage.py runserver` command
+5. By default the application will run on `127.0.0.1:8000`
+
+# Steps to use the application
+
 1. First You have to create an account by filling mandatory information.
 2. After succesful registration you will be directly redirected to skills page, where my skills will be displayed.
 3. When you click on the projects button under the card of respective skill, If I had done a project which involves that respective skill then it will be redirected to the projects page in which I had used the given skill.
